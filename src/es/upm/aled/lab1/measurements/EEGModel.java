@@ -117,7 +117,7 @@ public class EEGModel {
 			// Separates by commas and extracts the channels from each measurement
 			String[] columns = line.split(",");
 			float[] channels = new float[columns.length - 1];
-			for (int i = 1; i < columns.length; i++)
+			for (int i = 1; i < columns.length; i++) 
 				channels[i - 1] = Float.parseFloat(columns[i]);
 			addMeasurement(new Measurement(channels));
 		}
