@@ -107,7 +107,7 @@ public class EEGModel {
 	 */
 	public void loadFile(String fileName) throws IOException {
 		File f = new File(fileName);
-		FileInputStream fis = new FileInputStream(f);
+		FileInputStream fis = new FileInputStream(f);  
 		DataInput fid = new DataInputStream(fis);
 		String line;
 		while ((line = fid.readLine()) != null) {
@@ -131,7 +131,8 @@ public class EEGModel {
 	 * @throws IOException Thrown if the file can't be written.
 	 */
 	public void saveFile(String fileName) throws IOException {
-		// TODO
+	File file = new File(fileName);
+	
 		
 	}
 
